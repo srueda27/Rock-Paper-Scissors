@@ -46,6 +46,12 @@
     function playRound(playerSelection = prompt("Rock Paper Scissors"), computer = computerPlay()) {
         playerSelection = playerSelection.toLowerCase()
 
+        /**
+        * 0 for Draws
+        * 1 for Loses
+        * 2 for Wins
+        **/
+
         if (playerSelection === "rock" && computer === "Rock") {
             return 0
         } else if (playerSelection === "rock" && computer === "Paper") {
